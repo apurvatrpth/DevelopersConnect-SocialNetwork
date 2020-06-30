@@ -1,0 +1,348 @@
+{
+  "data-availability": {
+    "months-available": 12,
+    "months-requested": 3
+  },
+  "income": {
+    "data-sufficient": true,
+    "salaried": true,
+    "income": 15000,
+    "confidence": "high"
+  },
+  "bank-accounts": {
+    "number-of-accounts": 2,
+    "number-of-active-accounts": 1,
+    "accounts": [
+      {
+        "bank-name": "HDFC Bank",
+        "account-identifier": "xxxx xxxx 1234",
+        "is-active": true,
+        "latest-balance": {
+          "amount": 8000,
+          "date-reported": "27/04/2019"
+        },
+        "last-transaction": {
+          "amount": 5000,
+          "date-reported": "27/04/2019",
+          "debit-or-credit": "debit"
+        },
+        "summary": {
+          "bank-balance": [
+            {
+              "month": "08/2019",
+              "max-balance": 10000,
+              "min-balance": 100,
+              "avg-balance": 1000
+            },
+            {
+              "month": "07/2019",
+              "max-amount": 10000,
+              "min-amount": 100,
+              "avg-balance": 1000
+            },
+            {
+              "month": "06/2019",
+              "max-amount": 10000,
+              "min-amount": 100,
+              "avg-balance": 1000
+            }
+          ],
+          "transaction": [
+            {
+              "month": "Aug'19",
+              "count-total": 10000,
+              "count-credit": 5000,
+              "count-debit": 5000,
+              "max-credit": 10000,
+              "max-debit": 10000,
+              "min-credit": 100,
+              "min-debit": 100,
+              "avg-credit": 1000,
+              "avg-debit": 1000,
+              "sum-credit": 20000,
+              "sum-debit": 20000
+            },
+            {
+              "month": "Jul'19",
+              "count-total": 10000,
+              "count-credit": 5000,
+              "count-debit": 5000,
+              "max-credit": 10000,
+              "max-debit": 10000,
+              "min-credit": 100,
+              "min-debit": 100,
+              "avg-credit": 1000,
+              "avg-debit": 1000,
+              "sum-credit": 20000,
+              "sum-debit": 20000
+            },
+            {
+              "month": "June'19",
+              "count-total": 10000,
+              "count-credit": 5000,
+              "count-debit": 5000,
+              "max-credit": 10000,
+              "max-debit": 10000,
+              "min-credit": 100,
+              "min-debit": 100,
+              "avg-credit": 1000,
+              "avg-debit": 1000,
+              "sum-credit": 20000,
+              "sum-debit": 20000
+            }
+          ]
+        }
+      },
+      {
+        "bank-name": "ICICI",
+        "active-status": "True",
+        "current-balance": 8000,
+        "bank-balance-summary": [
+          {
+            "month": "Aug'19",
+            "max-balance": 10000,
+            "min-balance": 100,
+            "avg-balance": 1000
+          },
+          {
+            "month": "Aug'19",
+            "max-amount": 10000,
+            "min-amount": 100,
+            "avg-balance": 1000
+          },
+          {
+            "month": "Aug'19",
+            "max-amount": 10000,
+            "min-amount": 100,
+            "avg-balance": 1000
+          }
+        ],
+        "transaction-summary": {
+          "credit-transaction-summary": [
+            {
+              "month": "Aug'19",
+              "count": 5000,
+              "max-amount": 10000,
+              "min-amount": 100,
+              "avg-amount": 1000,
+              "sum-amount": 20000
+            },
+            {
+              "month": "Aug'19",
+              "count": 5000,
+              "max-amount": 10000,
+              "min-amount": 100,
+              "avg-amount": 1000,
+              "sum-amount": 20000
+            },
+            {
+              "month": "June'19",
+              "count": 5000,
+              "max-amount": 10000,
+              "min-amount": 100,
+              "avg-amount": 1000,
+              "sum-amount": 20000
+            }
+          ],
+          "debit-transaction-summary": [
+            {
+              "month": "Aug'19",
+              "count": 5000,
+              "max-amount": 10000,
+              "min-amount": 100,
+              "avg-amount": 1000,
+              "sum-amount": 20000
+            },
+            {
+              "month": "Aug'19",
+              "count": 5000,
+              "max-amount": 10000,
+              "min-amount": 100,
+              "avg-amount": 1000,
+              "sum-amount": 20000
+            },
+            {
+              "month": "June'19",
+              "count": 5000,
+              "max-amount": 10000,
+              "min-amount": 100,
+              "avg-amount": 1000,
+              "sum-amount": 20000
+            }
+          ]
+        }
+      }
+    ],
+    "all-accounts-summary": {
+      "bank-balance": [
+        {
+          "month": "08/2019",
+          "max-balance": 10000,
+          "min-balance": 100,
+          "avg-balance": 1000
+        },
+        {
+          "month": "07/2019",
+          "max-amount": 10000,
+          "min-amount": 100,
+          "avg-balance": 1000
+        },
+        {
+          "month": "06/2019",
+          "max-amount": 10000,
+          "min-amount": 100,
+          "avg-balance": 1000
+        }
+      ],
+      "transaction": [
+        {
+          "month": "Aug'19",
+          "count-total": 10000,
+          "count-credit": 5000,
+          "count-debit": 5000,
+          "max-credit": 10000,
+          "max-debit": 10000,
+          "min-credit": 100,
+          "min-debit": 100,
+          "avg-credit": 1000,
+          "avg-debit": 1000,
+          "sum-credit": 20000,
+          "sum-debit": 20000
+        },
+        {
+          "month": "Jul'19",
+          "count-total": 10000,
+          "count-credit": 5000,
+          "count-debit": 5000,
+          "max-credit": 10000,
+          "max-debit": 10000,
+          "min-credit": 100,
+          "min-debit": 100,
+          "avg-credit": 1000,
+          "avg-debit": 1000,
+          "sum-credit": 20000,
+          "sum-debit": 20000
+        },
+        {
+          "month": "June'19",
+          "count-total": 10000,
+          "count-credit": 5000,
+          "count-debit": 5000,
+          "max-credit": 10000,
+          "max-debit": 10000,
+          "min-credit": 100,
+          "min-debit": 100,
+          "avg-credit": 1000,
+          "avg-debit": 1000,
+          "sum-credit": 20000,
+          "sum-debit": 20000
+        }
+      ]
+    }
+  },
+  "liabilities": {
+    "credit-cards": {
+      "number-of-credit-cards": 3,
+      "count-overdue": 2,
+      "cards": [
+        {
+          "issuer": "ICICI",
+          "card-number": "xxx543",
+          "card-due-date": "10",
+          "card-limit": 50000,
+          "is-current-overdue": true,
+          "dues": [
+            {
+              "month": "08/2019",
+              "total-due-amount": 12000,
+              "min-due-amount": 12000,
+              "due-date": "12/08/2019",
+              "missed-payment": false
+            },
+            {
+              "month": "08/2019",
+              "total-due-amount": 12000,
+              "min-due-amount": 12000,
+              "due-date": "12/08/2019",
+              "missed-payment": false
+            }
+          ],
+          "bills-paid": [
+            {
+              "month": "08/2019",
+              "amount-paid": 12000
+            },
+            {
+              "month": "08/2019",
+              "amount-paid": 10000
+            }
+          ],
+          "transaction-summary": [
+            {
+              "month": "Aug'19",
+              "count": 5000,
+              "max-amount": 10000,
+              "min-amount": 100,
+              "avg-amount": 1000,
+              "sum-amount": 20000
+            },
+            {
+              "month": "Aug'19",
+              "count": 5000,
+              "max-amount": 10000,
+              "min-amount": 100,
+              "avg-amount": 1000,
+              "sum-amount": 20000
+            },
+            {
+              "month": "June'19",
+              "count": 5000,
+              "max-amount": 10000,
+              "min-amount": 100,
+              "avg-amount": 1000,
+              "sum-amount": 20000
+            }
+          ]
+        }
+      ],
+      "aggregate": {
+        "transaction-summary": [
+          {
+            "month": "Aug'19",
+            "count": 5000,
+            "max-amount": 10000,
+            "min-amount": 100,
+            "avg-amount": 1000,
+            "sum-amount": 20000
+          },
+          {
+            "month": "Aug'19",
+            "count": 5000,
+            "max-amount": 10000,
+            "min-amount": 100,
+            "avg-amount": 1000,
+            "sum-amount": 20000
+          },
+          {
+            "month": "June'19",
+            "count": 5000,
+            "max-amount": 10000,
+            "min-amount": 100,
+            "avg-amount": 1000,
+            "sum-amount": 20000
+          }
+        ]
+      }
+    }
+  },
+  "negative-events": {
+    "insufficient-balance": {
+      "count-last3-months": 4,
+      "latest-date": "27/10/2020"
+    },
+    "missed-emi-payment": {
+      "count-last3-months": 4,
+      "latest-date": "27/10/2020"
+    }
+  }
+}
