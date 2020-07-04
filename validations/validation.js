@@ -8,6 +8,12 @@ UserValidator = [
   }),
 ];
 
+LoginValidator = [
+  check("email", "Email is required").isEmail(),
+  check("password", "Password should be 8 or more characters long").exists(),
+];
+
 module.exports = {
   UserValidator,
+  LoginValidator,
 };
