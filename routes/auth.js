@@ -10,7 +10,7 @@ const bcrypt = require("bcryptjs");
 
 // get user route
 // assuming req contains jwt token which will then show the user his details
-router.get("/auth", auth, async (req, res) => {
+router.get("/", auth, async (req, res) => {
   try {
     const user = await User.findById(req.user.id).select("-password");
     res.json(user);
@@ -22,7 +22,7 @@ router.get("/auth", auth, async (req, res) => {
 
 //login route
 //authenticate user and get token
-router.post("/auth", LoginValidator, async (req, res) => {
+router.post("/", LoginValidator, async (req, res) => {
   const errors = validationResult(req);
   if (!errors.isEmpty()) {
     return res.status(400).json({ error: errors.array() });
