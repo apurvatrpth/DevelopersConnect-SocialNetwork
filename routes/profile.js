@@ -78,6 +78,35 @@ router.post("/", [auth, ProfileValidator], async (req, res) => {
 
     res.json(profile);
   } catch (err) {
+    console.log(err.message);
+    res.status(500).send("Server Error");
+  }
+});
+
+router.get("/", async (req, res) => {
+  try {
+    let profiles = await Profile.find().populate("user", ["name", "avatar"]);
+    res.json(profiles);
+  } catch (err) {
+    console.log(err.message);
+    res.status(500).send("Server Error");
+  }
+});
+
+router.get("/user/:id", async (req, res) => {
+  try {
+    const profile = await Profile.findOne({
+      user: req.params.id,
+    }).populate("user", ["name", "avatar"]);
+
+    if (!profile) return res.status(400).json({ msg: "Profile not found" });
+
+    res.json(profile);
+  } catch (err) {
+    console.log(err.message);
+    if (err.kind == "ObjectId") {
+      return res.status(400).json({ msg: "Profile not found" });
+    }
     res.status(500).send("Server Error");
   }
 });
