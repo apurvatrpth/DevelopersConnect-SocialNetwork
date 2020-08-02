@@ -1,5 +1,6 @@
 const auth = require("../middlewares/authorization");
 const Profile = require("../models/profileModel");
+const User = require("../models/userModel");
 const { ProfileValidator } = require("../validations/validation");
 const { validationResult } = require("express-validator");
 const express = require("express");
@@ -107,6 +108,17 @@ router.get("/user/:id", async (req, res) => {
     if (err.kind == "ObjectId") {
       return res.status(400).json({ msg: "Profile not found" });
     }
+    res.status(500).send("Server Error");
+  }
+});
+
+router.delete("/", auth, async (req, res) => {
+  try {
+    await Profile.findOneAndRemove({ user: req.user.id });
+    await User.findOneAndRemove({ _id: req.user.id });
+    res.json({ msg: "User deleted" });
+  } catch (error) {
+    console.log(err.message);
     res.status(500).send("Server Error");
   }
 });
