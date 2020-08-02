@@ -18,8 +18,15 @@ ProfileValidator = [
   check("skills", "Skills is required").not().isEmpty(),
 ];
 
+ExperienceValidator = [
+  check("title", "Title is required").not().isEmpty(),
+  check("company", "Company is required").not().isEmpty(),
+  check("from", "From date is required").not().isEmpty(),
+];
+
 module.exports = {
   UserValidator,
   LoginValidator,
   ProfileValidator,
+  ExperienceValidator,
 };
